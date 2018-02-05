@@ -3,6 +3,7 @@ package com.kren.shild;
 public class LambdaFundamental {
 
     public static void main(String[] args) {
+	// without lambda
 
 	Simple simple = new Simple() {
 
@@ -15,15 +16,19 @@ public class LambdaFundamental {
 	System.out.println(simple);
 	simple.simpleMethod();
 
-	// example two with lambda
+	// with lambda
 
 	Simple sim = () -> System.out.println("hello from simple method");
 
 	System.out.println(sim);
-
 	sim.simpleMethod();
 
-	// Runnable
+	SimpleTwo simpleTwo = (value) -> {
+	    System.out.println("value: " + value);
+	    return value;
+	};
+
+	simpleTwo.simpleMethod(100);
 
     }
 
@@ -32,5 +37,11 @@ public class LambdaFundamental {
 @FunctionalInterface
 interface Simple {
     void simpleMethod();
+
+}
+
+@FunctionalInterface
+interface SimpleTwo {
+    int simpleMethod(int value);
 
 }
