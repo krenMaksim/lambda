@@ -18,7 +18,6 @@ public class VarCapture {
 	// value++;
 
 	capture.asArgumentMethod();
-
     }
 
 }
@@ -26,5 +25,4 @@ public class VarCapture {
 @FunctionalInterface
 interface LambdaVarCapture {
     void asArgumentMethod();
-
 }
