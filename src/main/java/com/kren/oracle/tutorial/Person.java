@@ -26,6 +26,10 @@ public class Person {
 
     }
 
+    public static int compareByAge(Person a, Person b) {
+	return a.age - b.age;
+    }
+
     public enum Sex {
 	MALE, FEMALE
     }
