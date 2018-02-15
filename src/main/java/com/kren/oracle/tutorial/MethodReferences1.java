@@ -26,6 +26,13 @@ public class MethodReferences1 {
 
 	System.out.println(Arrays.toString(roster));
 
+	// way four
+	PersonAgeComparator ageComparator = new PersonAgeComparator();
+
+	Arrays.sort(roster, ageComparator::compare);
+
+	System.out.println(Arrays.toString(roster));
+
     }
 
     private static class PersonAgeComparator implements Comparator<Person> {

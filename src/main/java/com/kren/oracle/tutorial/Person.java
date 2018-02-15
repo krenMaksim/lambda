@@ -39,6 +39,10 @@ public class Person {
     private Sex gender;
     private String emailAddress;
 
+    public Person() {
+
+    }
+
     public Person(String name, int age, Sex gender, String emailAddress) {
 	this.name = name;
 	this.age = age;
