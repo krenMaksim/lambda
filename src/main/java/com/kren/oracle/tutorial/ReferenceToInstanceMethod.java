@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-public class ReferenceToInstanceMethod1 {
+public class ReferenceToInstanceMethod {
 
     public static void main(String[] args) {
 

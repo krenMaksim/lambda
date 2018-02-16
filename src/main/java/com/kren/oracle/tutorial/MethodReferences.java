@@ -3,7 +3,7 @@ package com.kren.oracle.tutorial;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class MethodReferences1 {
+public class MethodReferences {
 
     public static void main(String[] args) {
 
