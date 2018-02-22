@@ -1,18 +1,25 @@
 package com.kren.oracle.tutorial;
 
+import java.util.List;
+import java.util.Map;
 import java.util.function.IntConsumer;
+import java.util.stream.Collectors;
 
 public class Stream {
 
     public static void main(String[] args) {
-	showTotalAge();
+	// showTotalAge();
 
-	showTotalAgeWithReduce();
+	// showTotalAgeWithReduce();
 
-	showAverageAge();
+	// showAverageAge();
+
+	// showNamesOfMaleMambers();
+
+	useGroupBy();
     }
 
-    private static void showTotalAge() {
+    static void showTotalAge() {
 	int totalAge = Person.roster.stream()
 				    .mapToInt(Person::getAge)
 				    .sum();
@@ -20,7 +27,7 @@ public class Stream {
 	System.out.println("total age: " + totalAge);
     }
 
-    private static void showTotalAgeWithReduce() {
+    static void showTotalAgeWithReduce() {
 	int totalAge = Person.roster.stream()
 				    .mapToInt(Person::getAge)
 				    .reduce(0, (a, b) -> a + b);
@@ -28,7 +35,7 @@ public class Stream {
 	System.out.println("total age with reduce: " + totalAge);
     }
 
-    private static void showAverageAge() {
+    static void showAverageAge() {
 	Averager averager = Person.roster.stream()
 					 .filter(person -> person.getGender() == Person.Sex.MALE)
 					 .mapToInt(Person::getAge)
@@ -36,6 +43,22 @@ public class Stream {
 
 	System.out.println(averager);
 	System.out.println("average age for male person: " + averager.average());
+    }
+
+    static void showNamesOfMaleMambers() {
+	List<String> names = Person.roster.stream()
+					  .filter(person -> person.getGender() == Person.Sex.MALE)
+					  .map(person -> person.getName())
+					  .collect(Collectors.toList());
+
+	System.out.println(names);
+    }
+
+    static void useGroupBy() {
+	Map<Person.Sex, List<Person>> map = Person.roster.stream()
+							 .collect(Collectors.groupingBy(person -> person.getGender()));
+
+	System.out.println(map);
     }
 }
 
