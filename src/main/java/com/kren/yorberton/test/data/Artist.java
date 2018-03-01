@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package com.kren.commonClasses;
+package com.kren.yorberton.test.data;
 
 import java.util.ArrayList;
 import java.util.Collections;

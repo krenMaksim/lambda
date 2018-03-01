@@ -1,4 +1,4 @@
-package com.kren.chapter4;
+package com.kren.yorberton.chapter4;
 
 import java.util.function.Supplier;
 

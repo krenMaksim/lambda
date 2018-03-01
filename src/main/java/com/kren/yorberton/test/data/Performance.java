@@ -1,4 +1,4 @@
-package com.kren.commonClasses;
+package com.kren.yorberton.test.data;
 
 import java.util.stream.Stream;
 

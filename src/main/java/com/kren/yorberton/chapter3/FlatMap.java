@@ -1,4 +1,4 @@
-package com.kren.chapter3;
+package com.kren.yorberton.chapter3;
 
 import java.util.Arrays;
 import java.util.List;

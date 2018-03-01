@@ -1,10 +1,10 @@
-package com.kren.chapter3;
+package com.kren.yorberton.chapter3;
 
 import java.util.Collections;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.kren.commonClasses.Album;
+import com.kren.yorberton.test.data.Album;
 
 public class UnionOperation {
 

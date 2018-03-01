@@ -1,10 +1,10 @@
-package com.kren.chapter3;
+package com.kren.yorberton.chapter3;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-import com.kren.commonClasses.Track;
+import com.kren.yorberton.test.data.Track;
 
 public class MaxAndMin {
     public static void main(String[] args) {
