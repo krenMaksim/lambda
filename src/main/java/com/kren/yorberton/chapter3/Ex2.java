@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import com.kren.yorberton.test.data.Artist;
-import com.kren.yorberton.test.data.SampleData;
+import com.kren.yorberton.test.data.SimpleData;
 
 public class Ex2 {
 
     public static void main(String[] args) {
-	List<Artist> artists = Arrays.asList(SampleData.theBeatles, SampleData.johnColtrane);
+	List<Artist> artists = Arrays.asList(SimpleData.theBeatles, SimpleData.johnColtrane);
 
 	beforeRefacroting(artists);
 	afterRefacroting(artists);

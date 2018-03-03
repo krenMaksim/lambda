@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 import com.kren.yorberton.test.data.Album;
 import com.kren.yorberton.test.data.Artist;
-import com.kren.yorberton.test.data.SampleData;
+import com.kren.yorberton.test.data.SimpleData;
 
 public class Ex1 {
 
@@ -18,11 +18,11 @@ public class Ex1 {
 	intStream = IntStream.of();
 	System.out.println(addUp(intStream));
 
-	List<Artist> artists = SampleData.membersOfTheBeatles;
+	List<Artist> artists = SimpleData.membersOfTheBeatles;
 
 	System.out.println(exB(artists));
 
-	List<Album> albums = Arrays.asList(SampleData.aLoveSupreme, SampleData.sampleShortAlbum, SampleData.manyTrackAlbum);
+	List<Album> albums = Arrays.asList(SimpleData.aLoveSupreme, SimpleData.sampleShortAlbum, SimpleData.manyTrackAlbum);
 
 	// Set<Album> moreThanThreeTracks =
 	exC(albums).stream()

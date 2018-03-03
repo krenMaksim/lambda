@@ -13,11 +13,11 @@ import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
 import com.kren.yorberton.test.data.Album;
-import com.kren.yorberton.test.data.SampleData;
+import com.kren.yorberton.test.data.SimpleData;
 
 public class RefactoringTest {
 
-    private static List<Album> albums = unmodifiableList(asList(SampleData.aLoveSupreme, SampleData.sampleShortAlbum));
+    private static List<Album> albums = unmodifiableList(asList(SimpleData.aLoveSupreme, SimpleData.sampleShortAlbum));
 
     private static Set<String> rezult = Collections.unmodifiableSet(Arrays.asList("Acknowledgement", "Resolution")
 									  .stream()

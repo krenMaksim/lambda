@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 import static java.util.Arrays.asList;
 
-public class SampleData {
+public class SimpleData {
 
     public static final Artist johnColtrane = new Artist("John Coltrane", "US");
 
